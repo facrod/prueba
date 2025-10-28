@@ -1,0 +1,10 @@
+.latir {
+  display: inline-block;   /* necesario para que se pueda escalar */
+  animation: latido 1s infinite ease-in-out;
+}
+
+@keyframes latido {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); } /* agranda un poco */
+  100% { transform: scale(1); }
+}
