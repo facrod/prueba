@@ -87,6 +87,6 @@ function moverBoton() {
     no.style.top = `${posTB}px`;
     no.style.left = `${posLR}px`;
 }
-si.addEventListener("click", ()=>{
+si.addEventListener("touch", ()=>{
     msjFinal.innerText = "yo te quiero más"
 })
