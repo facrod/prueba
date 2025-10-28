@@ -1,11 +1,11 @@
 let fondoBtn = document.getElementById("btnF")
 let caja = document.getElementById("caja");
 let letras = document.getElementById("letras");
-fondoBtn.addEventListener("click", ()=>{
+fondoBtn.addEventListener("touchstart", ()=>{
     let hexa = (Math.floor(Math.random() * (5000 - 0 + 1)) + 0).toString();
     caja.style.backgroundColor = "#" + hexa 
 })
-letras.addEventListener("click", ()=>{
+letras.addEventListener("touchstart", ()=>{
     if (caja.style.color == "white") {
         caja.style.color = "black";    
     } else {
@@ -23,7 +23,7 @@ let res4 = document.getElementById("pregunta4")
 let msjR = document.getElementById("msjR")
 let puntacion = 0
 
-send.addEventListener("click", ()=>{    // Reiniciamos puntaje cada vez que se hace click
+send.addEventListener("touchstart", ()=>{    // Reiniciamos puntaje cada vez que se hace click
     puntacion = 0;
 
     // Mostramos mensaje de carga
@@ -87,6 +87,6 @@ function moverBoton() {
     no.style.top = `${posTB}px`;
     no.style.left = `${posLR}px`;
 }
-si.addEventListener("touch", ()=>{
+si.addEventListener("touchstart", ()=>{
     msjFinal.innerText = "yo te quiero más"
 })
